@@ -1,0 +1,72 @@
+margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background: #f7f8fc;
+  color: #222;
+  transition: 0.4s;
+}
+
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+.portfolio {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.8s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark button */
+#theme-toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}.card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-14px) scale(1.02);
+}
